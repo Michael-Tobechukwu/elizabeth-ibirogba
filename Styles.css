@@ -70,6 +70,7 @@ button {
   align-items: center;
   max-width: 1024px;
   margin: 50px auto 0 auto;
+  padding-left: 5%;
 }
 
 .header-img {
@@ -100,7 +101,7 @@ button {
   border: none;
   box-shadow: 3px 5px 3px #555353;
   background-color: #f30e79;
-  padding: 10px;
+  padding: 4% 3%;
   transition: ease 1s;
   border-radius: 5px;
   margin-top: 20px;
@@ -118,10 +119,6 @@ button {
 
 .header-button:hover {
   background-color: #0000ff;
-}
-
-.header-button a:hover::after {
-  content: ">>";
 }
 
 .about-section-title {
@@ -221,11 +218,12 @@ button {
 }
 
 .blog-section-title {
-  margin-top: 30px;
+  margin: 0 auto 0 auto;
+  padding-top: 30px;
 }
 
 .blog-section-title h1 {
-  margin-left: 320px;
+ text-align: center;
   color: #0000ff;
 }
 
