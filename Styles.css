@@ -388,6 +388,7 @@ border-radius: 5px;
   box-shadow: 3px 3px 3px #555353;
   transition: ease 1s;
   font-size: 100%;
+  margin-top: 30px;
 }
 
 .contact-section form button:hover {
