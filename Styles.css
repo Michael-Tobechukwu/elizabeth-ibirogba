@@ -4,9 +4,14 @@
   box-sizing: border-box;
 }
 
-body,
-button {
+body {
   background-color: #a1c3ff;
+  font-family: "Montserrat", sans-serif;
+}
+
+button,
+form,
+input {
   font-family: "Montserrat", sans-serif;
 }
 
@@ -101,7 +106,7 @@ button {
   border: none;
   box-shadow: 3px 5px 3px #555353;
   background-color: #f30e79;
-  padding: 4% 3%;
+  padding: 2% 3%;
   transition: ease 1s;
   border-radius: 5px;
   margin-top: 20px;
@@ -128,13 +133,22 @@ button {
 }
 
 .about-section-title h1 {
-  text-align: center;
+  margin: 2% auto 0 auto;
   color: #0000ff;
+  width: 13%;
+  font-size: 2.5em;
+  padding: 11px 0;
+  border-top: 2.5px dotted #0000ff;
+  border-bottom: 2.5px dotted #0000ff;
+}
+
+.about-section-title h1:hover {
+  color: #f30e79;
 }
 
 .about-section {
   background-color: #fff;
-  margin: 0 auto 50px auto;
+  margin: 0 auto 20px auto;
   padding: 50px 20px;
 }
 
@@ -145,7 +159,7 @@ button {
 .about-container {
   display: flex;
   justify-content: space-around;
-  align-items: top;
+  align-items: center;
   max-width: 1024px;
   margin: 0 auto;
 }
@@ -155,7 +169,11 @@ button {
 }
 
 .about-me-img {
+  padding: 0.5%;
   width: 35%;
+  background: #fff;
+  border: 1px solid #fff;
+  box-shadow: 5px 5px 5px #555353;
 }
 
 .about-me-img img {
@@ -170,6 +188,7 @@ button {
 .about-me-text p {
   font-size: 14px;
   line-height: 2em;
+  text-align: justify;
 }
 
 .about-connect ul li {
@@ -218,23 +237,168 @@ button {
 }
 
 .blog-section-title {
-  margin: 0 auto 0 auto;
-  padding-top: 30px;
+  margin: 2% auto;
 }
 
 .blog-section-title h1 {
- text-align: center;
+  margin: 2% auto;
   color: #0000ff;
+  width: 11%;
+  font-size: 2.5em;
+  padding: 11px 0;
+  border-top: 2.5px dotted #0000ff;
+  border-bottom: 2.5px dotted #0000ff;
+}
+
+.blog-section-title h1:hover {
+  color: #f30e79;
 }
 
 .blog-section {
   display: flex;
   background: #a1c3ff;
   max-width: 1024px;
-  margin: 0 auto;
-  padding: 30px 0;
-  justify-content: space-evenly;
+  margin: 0 auto 30px auto;
+  padding: 20px 2%;
+}
+
+.blogpost1 {
+  display: flex;
+  justify-content: space-between;
+  margin: auto 2%;
   align-items: center;
+  width: 45%;
+  padding: 2%;
+  border: 1px solid #555353;
+}
+
+.blog1-img {
+  margin-right: 5%;
+}
+
+.blogpost2 {
+  display: flex;
+  justify-content: space-between;
+  margin: auto 2%;
+  align-items: center;
+  width: 46%;
+  padding: 2%;
+  border: 1px solid #555353;
+}
+
+.blog2-img {
+  margin-right: 5%;
+}
+
+.blogpost1 h2 {
+  color: #0000ff;
+}
+
+.blogpost1 p {
+  margin: 3% auto;
+  line-height: 1.5em;
+  text-align: left;
+}
+
+.blogpost2 h2 {
+  color: #0000ff;
+}
+
+.blogpost2 p {
+  margin: 3% auto;
+  line-height: 1.5em;
+  text-align: left;
+}
+
+.testimonials-section {
+  margin: 30px auto 0 auto;
+  text-align: center;
+  width: 100%;
+  background: #fff;
+}
+
+.testimonials-content {
+  width: 40%;
+  height: auto;
+  line-height: 2em;
+  margin: 0 auto;
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+
+.testimonials-content h1 {
+  margin: 2% auto 2% auto;
+  font-size: 2.5em;
+  padding: 11px 0;
+  border-top: 2.5px dotted #0000ff;
+  border-bottom: 2.5px dotted #0000ff;
+  width: 44%;
+  color: #0000ff;
+  line-height: 1.2em;
+}
+
+.testimonials-content h1:hover {
+  color: #f30e79;
+}
+
+.testimonials-content p {
+  margin-top: 5%;
+  margin-bottom: 2%;
+}
+
+.contact-section {
+  background-image: url("Images/Books 1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 3% 3%;
+}
+
+.contact-section form {
+  margin: 0 auto 2% auto;
+  text-align: center;
+}
+
+.contact-section form input {
+  width: 30%;
+  margin: 2% 2%;
+  font-size: 100%;
+  border-radius: 5px;
+  padding: 10px;
+  border: none;
+}
+
+form .input-group2 textarea {
+  width: 64%;
+border-radius: 5px;
+
+}
+
+
+.contact-section form input:focus {
+  border: 1px #000000 solid;
+}
+
+.contact-section form button {
+  padding: 15px;
+  border-radius: 7px;
+  font-weight: bold;
+  color: #fff;
+  background: #0000ff;
+  border: none;
+  box-shadow: 3px 3px 3px #555353;
+  transition: ease 1s;
+  font-size: 100%;
+}
+
+.contact-section form button:hover {
+  cursor: pointer;
+  background-color: #f30e79;
+}
+
+.contact-heading {
+  color: #fff;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 footer {
@@ -248,7 +412,7 @@ footer {
 
 footer a {
   text-decoration: none;
-  color: #555353;
+  color: #000000;
   transition: ease 1s;
 }
 
@@ -256,18 +420,68 @@ footer a:hover {
   color: #fff;
 }
 
-/* media queries*/
+/* Media queries*/
 
 @media (max-width: 768px) {
   .header-img img {
     margin-top: 18px;
   }
+  .header-container {
+    margin: 50px auto 0 auto;
+    padding-left: 5%;
+  }
 
   .header-text h1 {
     font-size: 150%;
   }
+
+  .about-container {
+    flex-direction: column;
+    max-width: 768px;
+    width: 95%;
+  }
+
+  .about-me-text {
+    width: 100%;
+  }
+
   .about-me-img {
     margin: 0 auto;
+  }
+  .blog-section {
+    flex-direction: column;
+  }
+  .blogpost1 {
+    width: 90%;
+  }
+
+  .blogpost2 {
+    width: 90%;
+  }
+  .blog1container h2,
+  .blog1container p {
+    font-size: 80%;
+  }
+
+  .blog2container h2,
+  .blog2container p {
+    font-size: 80%;
+  }
+
+  .blog1-img {
+    width: 90%;
+  }
+  .blog2-img {
+    width: 90%;
+  }
+
+  .testimonials-content {
+    width: 90%;
+    text-align: left;
+  }
+
+  .contact-section {
+    padding: 3% 3%;
   }
 }
 
@@ -295,6 +509,7 @@ footer a:hover {
 
   .header-container {
     background-image: url("Images/Elizabeth\ 33.png");
+    background-repeat: no-repeat;
     text-align: center;
     margin: 0 auto;
     max-width: 375px;
@@ -335,7 +550,8 @@ footer a:hover {
     padding-bottom: 0;
   }
   .about-section-title h1 {
-    margin-left: 0;
+    width: fit-content;
+    font-size: 30px;
   }
 
   .about-section {
@@ -364,7 +580,19 @@ footer a:hover {
   }
 
   .blog-section-title h1 {
-    margin-left: 0;
+    width: fit-content;
+    font-size: 30px;
+  }
+
+  .blog-section {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .testimonials-content h1 {
+    width: fit-content;
+    font-size: 30px;
+    text-align: center;
   }
 
   footer {
@@ -372,7 +600,7 @@ footer a:hover {
   }
 
   .footer-section {
-    width: 360px;
+    width: 375px;
     margin: 0 auto;
     font-size: 14px;
   }
