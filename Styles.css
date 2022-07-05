@@ -624,7 +624,7 @@ footer a:hover {
 .about-pageheader {
   max-width: 1024px;
   margin: 25px auto 0 auto;
-  height: 780px;
+  height: 775px;
 }
 
 .about-pageheader h1 {
@@ -691,6 +691,7 @@ footer a:hover {
 
 .long-bio {
   margin: 0 auto;
+  padding: 2% 0;
   background: #fff;
 }
 
@@ -701,9 +702,10 @@ footer a:hover {
 }
 
 .long-biocontainer h1 {
-  text-align:center;
+  text-align: center;
   color: #0000ff;
-  margin: 3% auto;
+  margin: 3% auto 0 auto;
+  padding: 3% 0;
 }
 
 .long-bio p {
@@ -856,6 +858,21 @@ footer a:hover {
   }
 }
 
+@media (max-width: 505px) {
+  .navbar-container {
+    flex-direction: column;
+    height: auto;
+    margin: 0 auto;
+    z-index: 1;
+  }
+  .nav-menu {
+    margin-top: 20px;
+  }
+  .nav-menu li {
+    margin-left: 4px;
+  }
+}
+
 @media (max-width: 375px) {
   .navbar-container {
     flex-direction: column;
@@ -987,7 +1004,7 @@ footer a:hover {
   }
   /*ABOUT ME PAGE STYLES FOR 375px*/
   .about-pageheader {
-    height: 310px;
+    height: 283px;
   }
 
   .bio-text p {
