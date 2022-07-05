@@ -871,6 +871,9 @@ footer a:hover {
   .nav-menu li {
     margin-left: 4px;
   }
+  .bio-text h3 {
+    font-size: 100%;
+  }
 }
 
 @media (max-width: 375px) {
@@ -965,10 +968,6 @@ footer a:hover {
 
   .bio-text h3 {
     font-size: 100%;
-  }
-
-  .bio-text h3 {
-    text-align: center;
   }
 
   .blog-section-title h1 {
