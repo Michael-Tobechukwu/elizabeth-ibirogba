@@ -398,6 +398,11 @@ input {
   text-decoration: none;
 }
 
+.blog1container p a:hover,
+.blog2container p a:hover {
+  color: #bbb;
+}
+
 .blog2container p a {
   background-color: #0000ff;
   color: white;
@@ -405,11 +410,6 @@ input {
   font-weight: bold;
   border-radius: 3px;
   text-decoration: none;
-}
-
-.blog1container p a:hover,
-.blog2container p a:hover {
-  color: #bbb;
 }
 
 .testimonials-section {
@@ -619,8 +619,98 @@ footer a:hover {
   color: #fff;
 }
 
+/*ABOUT ME PAGE STYLES*/
+
+.about-pageheader {
+  max-width: 1024px;
+  margin: 25px auto 0 auto;
+  height: 780px;
+}
+
+.about-pageheader h1 {
+  text-align: center;
+  color: #0000ff;
+  margin: 0 auto;
+}
+
+.bio-intro {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.bio-img {
+  max-width: 50%;
+  margin-top: 0;
+  width: 100%;
+}
+
+.bio-img img {
+  width: 150%;
+}
+
+.bio-text {
+  width: 45%;
+}
+
+.bio-text h1 {
+  margin: 4% auto 3% auto;
+}
+
+.bio-text h3 {
+  font-size: 200%;
+  color: #0000ff;
+}
+
+.bio-text p {
+  margin-top: 10px;
+  color: #f30e79;
+  font-weight: bold;
+  font-size: 1.3em;
+  margin: 5% auto 0 auto;
+}
+
+.bio-text ul li {
+  list-style-type: none;
+}
+
+.aboutpage-connect li {
+  display: inline-block;
+  margin: 10px 10px 10px 0;
+  list-style-type: none;
+}
+
+.aboutpage-connect li a {
+  font-size: 25px;
+  color: #0000ff;
+}
+
+.aboutpage-connect li a:hover {
+  color: #f30e79;
+}
+
+.long-bio {
+  margin: 0 auto;
+  background: #fff;
+}
+
+.long-biocontainer {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 5% auto;
+}
+
+.long-bio p {
+  line-height: 1.6em;
+  margin: 3%;
+}
+
 /* Media queries*/
 @media (max-width: 981px) {
+  .about-pageheader {
+    height: 100%;
+  }
+
   .blog-section {
     flex-direction: column;
   }
@@ -754,6 +844,10 @@ footer a:hover {
   .contact-heading h2 {
     font-size: 100%;
   }
+
+  .bio-text h3 {
+    font-size: 150%;
+  }
 }
 
 @media (max-width: 375px) {
@@ -846,7 +940,11 @@ footer a:hover {
     text-align: left;
   }
 
-  .blog-section-title {
+  .bio-text h3 {
+    font-size: 100%;
+  }
+
+  .bio-text h3 {
     text-align: center;
   }
 
@@ -880,5 +978,17 @@ footer a:hover {
     width: 375px;
     margin: 0 auto;
     font-size: 14px;
+  }
+  /*ABOUT ME PAGE STYLES FOR 375px*/
+  .about-pageheader {
+    height: 310px;
+  }
+
+  .bio-text p {
+    font-size: 100%;
+  }
+
+  .aboutpage-connect li a {
+    font-size: 120%;
   }
 }
