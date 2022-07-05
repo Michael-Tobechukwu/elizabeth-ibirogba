@@ -700,6 +700,12 @@ footer a:hover {
   padding: 5% auto;
 }
 
+.long-biocontainer h1 {
+  text-align:center;
+  color: #0000ff;
+  margin: 3% auto;
+}
+
 .long-bio p {
   line-height: 1.6em;
   margin: 3%;
