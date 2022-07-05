@@ -407,6 +407,11 @@ input {
   text-decoration: none;
 }
 
+.blog1container p a:hover,
+.blog2container p a:hover {
+  color: #bbb;
+}
+
 .testimonials-section {
   margin: 30px auto 0 auto;
   text-align: center;
