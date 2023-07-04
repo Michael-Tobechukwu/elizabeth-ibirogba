@@ -5,12 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Elizabeth Oluwashindara Ibirogba is an author, writer, mental and love therapist. Her book 'Identifying true love' is a must read!" >
-    <link rel="stylesheet" href="Styles.css" />
+    
     <link rel="shortcut icon" href="Images/Logo.png" type="image/x-icon" />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=WindSong:wght@500&display=swap"
       rel="stylesheet"
     />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="Styles.css" />
     <script
       src="https://kit.fontawesome.com/b41a766c11.js"
       crossorigin="anonymous"
@@ -19,334 +21,355 @@
     <title>Home | Elizabeth Oluwashindara Ibirogba</title>
   </head>
   <body>
-    <nav class="navbar">
-      <div class="navbar-container">
-        <div class="logo">
-          <h1><a href="index.html">Elizabeth</a></h1>
-        </div>
-
-        <ul class="nav-menu">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about-me.html">About Me</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <li><a href="#blog">Blog</a></li>
-        </ul>
-      </div>
-    </nav>
-
-    <header class="header">
-      <div class="header-container">
-        <div class="header-text">
-          <h4 class="anim1">Hi,</h4>
-
-          <h1 class="anim1">
-            I'm
-            <span
-              >Oluwashindara <br />
-              Elizabeth Ibirogba</span
-            >
-          </h1>
-
-          <p class="anim2">
-            Writer, relationship coach, love & <br />
-            mental therapist, lover of Jesus Christ.
-          </p>
-
-          <button class="header-button anim3">
-            <a href="about-me.html">LEARN MORE ABOUT ME <span>&#8594;</span></a>
-          </button>
-        </div>
-        <div class="header-img anim3">
-          <img src="Images/Elizabeth 33 no bg.png" alt="my profile pic" />
-        </div>
-      </div>
-    </header>
-    <!--About section starts here-->
-    <div class="about-section-title">
-      <h1>About Me</h1>
-    </div>
-    <section id="about" class="about-section">
-      <div class="about-container">
-        <div class="about-me-img">
-          <img
-            src="Images/Elizabeth 5 with book.jpg"
-            alt="With my book, Identifying True Love"
-          />
-        </div>
-        <br />
-        <div class="about-me-text">
-          <p>
-            Hello, my name is Oluwashindara Elizabeth Iborogba, but you can call
-            me Lizzy. Welcome to my website. <br />
-            I believe
-            <strong>
-              <em> healthy families birth healthy societies </em></strong
-            >
-            and that's why I started the
-            <strong>'Mind Reformation Forum'</strong> in 2020 which currently
-            has over 200 members.
-            <br />
-            As a relationship coach, love and mental therapist, I help people
-            address critical issues affecting their lives and relationships;
-            helping them gain mastery of their emotions and thus, be more
-            productive. I am currently studying Psychology at the University of
-            Ibadan (UI), Oyo state, Nigeria. <br />
-          </p>
-          <div class="about-connect">
-            <p>Connect with me</p>
-            <ul>
-              <li>
-                <a href="https://facebook.com/elizebeth.ibirogba"
-                  ><i class="fa-brands fa-facebook"></i
-                ></a>
-              </li>
-              <li>
-                <a href="https://twitter.com/OluwashindaraL4"
-                  ><i class="fa-brands fa-twitter"></i
-                ></a>
-              </li>
-              <li>
-                <a href="https://www.instagram.com/oluwashindaralizzy/"
-                  ><i class="fa-brands fa-instagram"></i
-                ></a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-    <div class="about-book">
-      <div class="book-img">
-        <img
-          src="Images/Book mockup.jpg"
-          alt="Identifying true love book"
-          width="315px"
-        />
-      </div>
-      <div class="about-book-text">
-        <h3>My New book</h3>
-        <p>
-          One fateful Sunday in Church after Sunday School class, a man, looking
-          puzzled like someone who has been searching looking for answers, stood
-          up and asked,
-          <em
-            >"where can one find true love? At work, in Church, at home,
-            where?"</em
-          >
-          The question drew laughter from almsot everyone; I didn't find it
-          funny because I knew where that question was coming from. This is a
-          question on the minds of many people. Some go as far as asking if true
-          love even exists at all. As a love and mental therapist, and in my
-          experiences during counseling, I see a lot of people struggling with
-          emotions, while some are innocently suffering from it. It's quite
-          funny they blame everything on love.
-          <strong
-            >What really is love? Does true love exists? Where can one find true
-            love? How do you identify true love</strong
-          >
-          ? You will answers to these and many more questions in the book in
-          <strong>IDENTIFYING TRUE LOVE</strong>.
-        </p>
-        <button class="about-button">
-          <a href="https://wa.link/xlk3rj"> Order a copy now</a>
+    <div class="myContainer">
+      <nav class="navbar navbar-expand-lg navbar-light justify-content-between">
+        <a class="navbar-brand logo text-white" href="index.html">Elizabeth</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
         </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home <span class="sr-only"></span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about-me.html">About Me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#blog">Blog</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+  
+      <header class="header">
+        <div class="header-container">
+          <div class="mobileHeader">
+            <img src="Images/Elizabeth 33.png" alt="">
+          </div>
+          <div class="header-text">
+            <h4 class="anim1">Hi,</h4>
+  
+            <h1 class="anim1">
+              I'm
+              <span
+                >Oluwashindara <br/>
+                Elizabeth Ibirogba</span
+              >
+            </h1>
+  
+            <p class="anim2">
+              Writer, relationship coach, love & 
+              mental therapist, lover of Jesus Christ.
+            </p>
+  
+            <button class="header-button anim3">
+              <a href="about-me.html">LEARN MORE ABOUT ME <span>&#8594;</span></a>
+            </button>
+          </div>
+          <div class="header-img anim3">
+            <img src="Images/Elizabeth 33 no bg.png" alt="My profile pic" />
+          </div>
+        </div>
+      </header>
+  
+      <div class="about-book">
+        <h3>My New book</h3>
+        <div class="aboutBook-content">
+          <div class="book-img">
+            <img
+              src="Images/Book_mockup.png"
+              alt="Identifying True Love book"
+              
+            />
+          </div>
+          
+          <div class="about-book-text">
+            
+            <p>
+              One fateful Sunday in Church after Sunday School class, a man, looking
+              puzzled like someone who has been searching looking for answers, stood
+              up and asked,
+              <em
+                >"where can one find true love? At work, in Church, at home,
+                where?"</em
+              >
+              The question drew laughter from almsot everyone; I didn't find it
+              funny because I knew where that question was coming from. This is a
+              question on the minds of many people. Some go as far as asking if true
+              love even exists at all. As a love and mental therapist, and in my
+              experiences during counseling, I see a lot of people struggling with
+              emotions, while some are innocently suffering from it. It's quite
+              funny they blame everything on love.
+              <strong
+                >What really is love? Does true love exists? Where can one find true
+                love? How do you identify true love</strong
+              >
+              ? You will answers to these and many more questions in the book in
+              <strong>IDENTIFYING TRUE LOVE</strong>.
+            </p>
+            <button class="about-button">
+              <a href="https://wa.link/xlk3rj" target="_blank"> Order a copy now</a>
+            </button>
+          </div>
+        </div>
       </div>
-    </div>
-
-    <!--About section ends here-->
-
-    <!--Testimonials section-->
-    <section class="testimonials-section">
-      <div class="testimonials-content">
-        <h1>What People Are Saying</h1>
-
-        <!-- Slideshow container -->
-        <div class="slideshow-container">
-          <!-- Full-width images with number and caption text -->
-          <div class="mySlides fade">
-            <div class="numbertext">1 / 2</div>
-            <div class="contentBox"></div>
-            <div class="text">
-              <p>
-                <i> <strong> I am always eager to read your articles</strong></i
-                ><br />
-                <q>
-                  I just wanted to share a quick note and let you know that you
-                  are doing a really good job. I'm glad and I will always bless
-                  the name of the Lord for making our paths cross. I would like
-                  to thank you for all the help you are giving me through your
-                  articles, I am consistently eager to read your articles the
-                  <em>“Weekly Boost”</em>, the Monthly Power-packed program,
-                  Sunday Service Summary the different inspiring, motivating and
-                  salvation messages you have used to influence my life. I
-                  cannot deny how greatly you have impacted my love and
-                  emotional life - I am now so emotionally mature to face
-                  whatever life brings my way. More power to your elbow and may
-                  the Almighty continue to increase you and take you higher and
-                  higher in Jesus' name.
-                </q>
-              </p>
-              <h3>Rotimi Michael</h3>
+      <!--About section starts here-->
+      
+      <section id="about" class="about-section">
+        <div class="about-section-title">
+          <h1>About Me</h1>
+        </div>
+        <div class="about-container">
+          <div class="about-me-img">
+            <img
+              src="Images/Elizabeth 5 with book.jpg"
+              alt="With my book, Identifying True Love"
+            />
+          </div>
+          
+          <div class="about-me-text">
+            <p>
+              Hello, my name is Oluwashindara Elizabeth Ibirogba, but you can call
+              me Lizzy. Welcome to my website.
+              I believe
+              <strong>
+                <em> healthy families birth healthy societies </em></strong
+              >
+              and that's why I started the
+              <strong>'Mind Reformation Forum'</strong> in 2020 which currently
+              has over 200 members.
+              
+              As a relationship coach, love and mental therapist, I help people
+              address critical issues affecting their lives and relationships;
+              helping them gain mastery of their emotions and thus, be more
+              productive. I am currently studying Psychology at the University of
+              Ibadan (UI), Oyo state, Nigeria. 
+            </p>
+            <div class="about-connect">
+              <p>Connect with me</p>
+              <ul>
+                <li>
+                  <a href="https://facebook.com/elizebeth.ibirogba"
+                    ><i class="fa-brands fa-facebook"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="https://twitter.com/OluwashindaraL4"
+                    ><i class="fa-brands fa-twitter"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="https://www.instagram.com/oluwashindaralizzy/"
+                    ><i class="fa-brands fa-instagram"></i
+                  ></a>
+                </li>
+              </ul>
             </div>
           </div>
-
-          <div class="mySlides fade">
-            <div class="numbertext">2 / 2</div>
-
-            <div class="text">
-              <p>
-                <strong>
-                  Identifying true love by Elizabeth is a must read!
-                </strong>
-                <br />
-                <q>
-                  I must confess, the book is too loaded not to be needed. Kai!
-                  It's a pity that the generation we live in today doesn't
-                  understand what <em>love</em> truly means. They mistake crush
-                  and infatuation for love. <br />
-                  Elizabeth in her book listed what people term as love which is
-                  not, you need to read through to understand what I'm talking
-                  about. She really went deep in explaining what love is, read
-                  the book to find out. It's also amazing how she shared her
-                  life story of how she was entangled for years on what she
-                  thought was love which wasn't. No doubt many people are also
-                  under that kind of entanglement and are struggling with it all
-                  the days of their life. She shared practical steps on how she
-                  was free from the struggles. The template is available for
-                  modelling to anyone who also want to be free in the book
-                  though. She also highlighted
-                  <strong>how you can identify true love</strong>. True love
-                  still exist, you are the one who haven't discovered it. The
-                  Amazing part of the book was when she linked it to Christ
-                  demonstrating how He showed true love by dying for mankind.
-                  Everyone needs to read
-                  <em>Identifying true love by Elizabeth Ibirogba</em> You did a
-                  Great work! More ink to your pen! God bless you.
-                </q>
-              </p>
-              <h3>Daniel Udoh</h3>
+        </div>
+      </section>
+      
+  
+      <!--About section ends here-->
+  
+      <!--Testimonials section-->
+      <section class="testimonials-section">
+        <div class="testimonials-content">
+          <h1>What People Are Saying</h1>
+  
+          <!-- Slideshow container -->
+          <div class="slideshow-container">
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 2</div>
+              <div class="contentBox"></div>
+              <div class="text">
+                <p>
+                  <i> <strong> I am always eager to read your articles</strong></i
+                  ><br />
+                  <q>
+                    I just wanted to share a quick note and let you know that you
+                    are doing a really good job. I'm glad and I will always bless
+                    the name of the Lord for making our paths cross. I would like
+                    to thank you for all the help you are giving me through your
+                    articles, I am consistently eager to read your articles the
+                    <em>“Weekly Boost”</em>, the Monthly Power-packed program,
+                    Sunday Service Summary the different inspiring, motivating and
+                    salvation messages you have used to influence my life. I
+                    cannot deny how greatly you have impacted my love and
+                    emotional life - I am now so emotionally mature to face
+                    whatever life brings my way. More power to your elbow and may
+                    the Almighty continue to increase you and take you higher and
+                    higher in Jesus' name.
+                  </q>
+                </p>
+                <h3>Rotimi Michael</h3>
+              </div>
             </div>
+  
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 2</div>
+  
+              <div class="text">
+                <p>
+                  <strong>
+                    Identifying true love by Elizabeth is a must read!
+                  </strong>
+                  <br />
+                  <q>
+                    I must confess, the book is too loaded not to be needed. Kai!
+                    It's a pity that the generation we live in today doesn't
+                    understand what <em>love</em> truly means. They mistake crush
+                    and infatuation for love. <br />
+                    Elizabeth in her book listed what people term as love which is
+                    not, you need to read through to understand what I'm talking
+                    about. She really went deep in explaining what love is, read
+                    the book to find out. It's also amazing how she shared her
+                    life story of how she was entangled for years on what she
+                    thought was love which wasn't. No doubt many people are also
+                    under that kind of entanglement and are struggling with it all
+                    the days of their life. She shared practical steps on how she
+                    was free from the struggles. The template is available for
+                    modelling to anyone who also want to be free in the book
+                    though. She also highlighted
+                    <strong>how you can identify true love</strong>. True love
+                    still exist, you are the one who haven't discovered it. The
+                    Amazing part of the book was when she linked it to Christ
+                    demonstrating how He showed true love by dying for mankind.
+                    Everyone needs to read
+                    <em>Identifying true love by Elizabeth Ibirogba</em> You did a
+                    Great work! More ink to your pen! God bless you.
+                  </q>
+                </p>
+                <h3>Daniel Udoh</h3>
+              </div>
+            </div>
+  
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
           </div>
-
-          <!-- Next and previous buttons -->
-          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          <br />
+  
+          <!-- The dots/circles -->
+          <div style="text-align: center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+          </div>
+        </div>
+      </section>
+  
+      <!--Blog section starts here-->
+      <div class="blog-section-title">
+        <h1>My Blog</h1>
+      </div>
+  
+      <section id="blog" class="blog-section">
+        <div class="blogpost1">
+          <div class="blog1-img">
+            <img src="Images/family02.jpg" alt="happy family" />
+          </div>
+          <div class="blog1container">
+            <h2>Your actions speak louder than your voice</h2>
+            <p>
+              I was reading the Bible on my phone a few days ago when my younger
+              brother entered the room...
+              <br />
+              <br />
+              <a
+                href="https://m.facebook.com/story.php?story_fbid=1972423192930583&id=100004887638769"
+                target="_blank"
+                >Continue reading...</a
+              >
+            </p>
+          </div>
         </div>
         <br />
-
-        <!-- The dots/circles -->
-        <div style="text-align: center">
-          <span class="dot" onclick="currentSlide(1)"></span>
-          <span class="dot" onclick="currentSlide(2)"></span>
+        <div class="blogpost2">
+          <div class="blog2-img">
+            <img src="Images/family01.jpg" alt="happy family 2" />
+          </div>
+          <div class="blog2container">
+            <h2>Pay attention to your children's feelings!</h2>
+            <p>
+              I was teaching one of my students in his house some days ago, at a
+              point I realized the boy seemed distracted...
+              <br />
+              <br />
+              <a
+                href="https://m.facebook.com/story.php?story_fbid=1961990803973822&id=100004887638769"
+                target="_blank"
+                >Continue reading...</a
+              >
+            </p>
+          </div>
         </div>
-      </div>
-    </section>
-
-    <!--Blog section starts here-->
-    <div class="blog-section-title">
-      <h1>My Blog</h1>
+      </section>
+      <!--Blog section ends here-->
+  
+      <!--Contact section starts here-->
+      <section id="contact" class="contact-section">
+        <div class="contact-heading">
+          <h2>
+            Fill the short form below to send me a message, and I'll respond as
+            soon as possible.
+          </h2>
+        </div>
+        <form
+          action="https://formsubmit.co/morayokejilizzy@gmail.com"
+          method="POST"
+        >
+          <input type="hidden" name="_captcha" value="false">
+          
+          <input
+            type="hidden"
+            name="_next"
+            value="https://elizabeth-ibirogba.vercel.app/thank-you.html"
+          />
+          <div class="input-group1">
+            <input
+              type="text"
+              name="first-name"
+              id="first-name"
+              placeholder="First name"
+              required
+            />
+  
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Email"
+              required
+            />
+          </div>
+  
+          <div class="input-group2">
+            <textarea type="text-area" name="text-area" id="text-area" rows="10">
+            </textarea>
+          </div>
+  
+          <button type="submit">Send A Message</button>
+        </form>
+      </section>
+      <!--Contact section ends here-->
+      <footer>
+        <div class="footer-section">
+          &copy Copyright 2022 Oluwashindara Ibirogba. Designed by
+          <span
+            ><a href="https://linktr.ee/mywebdesignworks" target="_blank"
+              >The Rock Digital.</a
+            ></span
+          ><br />
+        </div>
+      </footer>
     </div>
-
-    <section id="blog" class="blog-section">
-      <div class="blogpost1">
-        <div class="blog1-img">
-          <img src="Images/family02.jpg" alt="happy family" />
-        </div>
-        <div class="blog1container">
-          <h2>Your actions speak louder than your voice</h2>
-          <p>
-            I was reading the Bible on my phone a few days ago when my younger
-            brother entered the room...
-            <br />
-            <br />
-            <a
-              href="https://m.facebook.com/story.php?story_fbid=1972423192930583&id=100004887638769"
-              target="_blank"
-              >Continue reading...</a
-            >
-          </p>
-        </div>
-      </div>
-      <br />
-      <div class="blogpost2">
-        <div class="blog2-img">
-          <img src="Images/family01.jpg" alt="happy family 2" />
-        </div>
-        <div class="blog2container">
-          <h2>Pay attention to your children's feelings!</h2>
-          <p>
-            I was teaching one of my students in his house some days ago, at a
-            point I realized the boy seemed distracted...
-            <br />
-            <br />
-            <a
-              href="https://m.facebook.com/story.php?story_fbid=1961990803973822&id=100004887638769"
-              target="_blank"
-              >Continue reading...</a
-            >
-          </p>
-        </div>
-      </div>
-    </section>
-    <!--Blog section ends here-->
-
-    <!--Contact section starts here-->
-    <section id="contact" class="contact-section">
-      <div class="contact-heading">
-        <h2>
-          Fill the short form below to send me a message, and I'll respond as
-          soon as possible.
-        </h2>
-      </div>
-      <form
-        action="https://formsubmit.co/morayokejilizzy@gmail.com"
-        method="POST"
-      >
-        <input type="hidden" name="_captcha" value="false">
-        
-        <input
-          type="hidden"
-          name="_next"
-          value="https://elizabeth-ibirogba.vercel.app/thank-you.html"
-        />
-        <div class="input-group1">
-          <input
-            type="text"
-            name="first-name"
-            id="first-name"
-            placeholder="First name"
-            required
-          />
-
-          <input
-            type="email"
-            id="email"
-            name="email"
-            placeholder="Email"
-            required
-          />
-        </div>
-
-        <div class="input-group2">
-          <textarea type="text-area" name="text-area" id="text-area" rows="10">
-          </textarea>
-        </div>
-
-        <button type="submit">Send A Message</button>
-      </form>
-    </section>
-    <!--Contact section ends here-->
-    <footer>
-      <div class="footer-section">
-        &copy Copyright 2022 Oluwashindara Elizabeth Ibirogba. Designed &
-        developed by
-        <span
-          ><a href="https://linktr.ee/mywebdesignworks" target="_blank"
-            >The Rock Digital.</a
-          ></span
-        ><br />
-      </div>
-    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
     <script src="main.js"></script>
+    
   </body>
 </html>
