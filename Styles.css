@@ -2,11 +2,16 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
 }
 
 body {
   background-color: #a1c3ff;
   font-family: "Montserrat", sans-serif;
+}
+
+.myContainer {
+  width: 100%;
 }
 
 button,
@@ -16,10 +21,15 @@ input {
 }
 
 .navbar {
-  background: #0000ff;
+  background: #0000ff !important;
   position: sticky;
+  z-index: 1;
   top: 0;
   margin: 0 auto;
+}
+
+.navbar a {
+  color: #fff;
 }
 
 .navbar-container {
@@ -32,16 +42,13 @@ input {
   margin: 0 auto;
 }
 
-.logo a {
-  font-family: "WindSong", cursive;
-  color: #fff;
+.navbar-brand {
+  font-family: "WindSong", cursive !important;
   text-decoration: none;
   transition: ease 1s;
+  margin-left: 10px !important;
 }
 
-.logo a:hover {
-  color: #f30e79;
-}
 
 .navbar-container h1 {
   font-size: 30px;
@@ -90,7 +97,7 @@ input {
 
 .header-text h1 {
   color: #f30e79;
-  font-size: 50px;
+  font-size: 40px;
   transition: ease 1s;
 }
 
@@ -101,9 +108,9 @@ input {
 
 .header-text p {
   color: #555353;
-  font-size: 15px;
-  line-height: 1.2em;
+  font-size: 13px;
   transition: ease 1s;
+  font-weight: 500;
 }
 
 .header-button {
@@ -166,45 +173,35 @@ input {
     transform: translateY(0px);
   }
 }
-
 /*Animation styles end here*/
 
+/*About section*/
+
+.about-section {
+  margin: 0 auto;
+  width: 100%;
+}
+
 .about-section-title {
-  margin: 0 auto 0 auto;
-  background: #fff;
+  margin: 0.2rem auto;
   padding-top: 30px;
+  width: 100%;
+  text-align: center;
 }
 
 .about-section-title h1 {
-  margin: 2% auto 0 auto;
   color: #0000ff;
-  width: 13%;
-  font-size: 2.5em;
-  padding: 11px 0;
-  border-top: 2.5px dotted #0000ff;
-  border-bottom: 2.5px dotted #0000ff;
-}
-
-.about-section-title h1:hover {
-  color: #f30e79;
-}
-
-.about-section {
-  background-color: #fff;
-  margin: 0 auto 20px auto;
-  padding: 50px 20px;
-}
-
-.about-section .about-heading {
-  text-align: center;
+  font-size: 2em;
 }
 
 .about-container {
   display: flex;
   justify-content: space-around;
-  align-items: top;
-  max-width: 1024px;
+  align-items: flex-start;
+  flex-direction: row-reverse;
+  width: 95%;
   margin: 0 auto;
+  padding: 10px 0 30px 0;
 }
 
 .about-section p {
@@ -213,11 +210,7 @@ input {
 
 .about-me-img {
   padding: 0.5%;
-  width: 35%;
-  background: #fff;
-  border: 1px solid #fff;
-  box-shadow: 5px 5px 5px #555353;
-  height: fit-content;
+  width: 40%;
 }
 
 .about-me-img img {
@@ -255,29 +248,38 @@ input {
   font-size: 20px;
   font-weight: bold;
 }
-
+/*Book about*/
 .about-book {
+  width: 100%;
+  margin: 0 auto;
+  background: #fff;
+  padding: 20px;
+}
+
+.about-book h3 {
+  text-align: center;
+}
+
+.aboutBook-content {
+  width: 95%;
   display: flex;
   justify-content: space-around;
-  width: 70%;
-  align-items: center;
-  margin: 30px auto;
+  align-items: flex-start;
+  gap: 1rem;
+  margin: 1rem auto;
 }
 
 .about-book .book-img {
-  box-shadow: 5px 5px 8px #555353;
-  height: fit-content;
-  margin: 0;
+  width: 40%;
+}
+
+.about-book .book-img img {
+  width: 100%;
 }
 
 .about-book .about-book-text {
+  width: 55%;
   line-height: 1.5em;
-  width: auto;
-  margin-left: 3%;
-}
-
-.about-book .about-book-text h3 {
-  margin: 40px 0;
 }
 
 .about-book-text p {
@@ -316,17 +318,12 @@ input {
 }
 
 .blog-section-title h1 {
-  margin: 5% auto 2% auto;
+  margin: 2rem auto;
   color: #0000ff;
-  width: 11%;
+  width: 100%;
   font-size: 2.5em;
   padding: 11px 0;
-  border-top: 2.5px dotted #0000ff;
-  border-bottom: 2.5px dotted #0000ff;
-}
-
-.blog-section-title h1:hover {
-  color: #f30e79;
+  text-align: center;
 }
 
 .blog-section {
@@ -420,7 +417,7 @@ input {
 }
 
 .testimonials-content {
-  width: 50%;
+  width: 90%;
   height: auto;
   line-height: 2em;
   margin: 0 auto;
@@ -429,18 +426,12 @@ input {
 }
 
 .testimonials-content h1 {
-  margin: 2% auto 2% auto;
+  margin: 0 auto;
   font-size: 2.5em;
-  padding: 11px 0;
-  border-top: 2.5px dotted #0000ff;
-  border-bottom: 2.5px dotted #0000ff;
-  width: 44%;
+  padding: 10px 0;
+  width: 90%;
   color: #0000ff;
   line-height: 1.2em;
-}
-
-.testimonials-content h1:hover {
-  color: #f30e79;
 }
 
 .testimonials-content p {
@@ -617,6 +608,10 @@ footer a {
 
 footer a:hover {
   color: #fff;
+}
+
+.mobileHeader {
+  display: none;
 }
 
 /*ABOUT ME PAGE STYLES*/
@@ -858,34 +853,22 @@ footer a:hover {
   }
 }
 
-@media (max-width: 505px) {
-  .navbar-container {
-    flex-direction: column;
-    height: auto;
-    margin: 0 auto;
-    z-index: 1;
+@media (max-width: 568px) {
+  .myContainer {
+    overflow: hidden;
   }
-  .nav-menu {
-    margin-top: 20px;
-  }
-  .nav-menu li {
-    margin-left: 4px;
-  }
-  .bio-text h3 {
-    font-size: 100%;
-  }
-}
 
-@media (max-width: 375px) {
   .navbar-container {
     flex-direction: column;
     height: auto;
     margin: 0 auto;
     z-index: 1;
   }
+
   .nav-menu {
     margin-top: 20px;
   }
+
   .nav-menu li {
     margin-left: 4px;
   }
@@ -899,19 +882,33 @@ footer a:hover {
   }
 
   .header-container {
-    background-image: url("Images/Elizabeth\ 33.png");
-    background-repeat: no-repeat;
-    text-align: center;
-    margin: 0 auto;
-    max-width: 375px;
-    height: 450px;
+    background-image: none;
+    margin-top: 0;
+    width: 100%;
+    padding: 0;
   }
+
+  .mobileHeader {
+    display: block;
+    position: relative;
+    width: 100%;
+  }
+
+  .mobileHeader img {
+    width: 100%;
+  }
+
   .header-img {
     display: none;
   }
 
+  .header-text {
+    position: absolute;
+  }
+
   .header-text h4 {
     color: #fff;
+    font-size: 12px;
   }
 
   .header-text p {
@@ -919,29 +916,57 @@ footer a:hover {
     color: #fff;
   }
 
+  .about-book {
+    width: 100%;
+    padding: 20px 0;
+    margin-top: 0;
+  }
+
+  .about-book h3 {
+    margin: 0;
+  }
+
+  .aboutBook-content {
+    flex-direction: column;
+  }
+
+  .aboutBook-content .book-img {
+    width: 100%;
+  }
+
+  .aboutBook-content .about-book-text {
+    width: 100%;
+    padding: 0;
+  }
+
+  .aboutBook-content .about-book-text p {
+  margin: 0;
+  width: 98%;
+  }
+
   .about-container {
     flex-direction: column-reverse;
     text-align: center;
   }
+
   .header-text {
     margin-top: 20px;
     text-align: center;
   }
 
   .header-text h1 {
-    font-size: 30px;
+    font-size: 2rem;
   }
   .header-text h3 {
     font-size: 15px;
-    max-width: fit-content;
   }
 
   .about-section-title {
     text-align: center;
     padding-bottom: 0;
   }
+
   .about-section-title h1 {
-    width: fit-content;
     font-size: 30px;
   }
 
@@ -954,7 +979,7 @@ footer a:hover {
   }
 
   .about-me-img {
-    max-width: 360px;
+    width: 100%;
   }
 
   .about-me-img img {
@@ -962,12 +987,18 @@ footer a:hover {
   }
 
   .about-me-text {
-    max-width: 360px;
+    width: 98%;
     text-align: left;
+    font-size: 12px;
   }
 
-  .bio-text h3 {
-    font-size: 100%;
+  .about-connect p {
+    margin-bottom: 0;
+  }
+
+  .about-connect ul {
+    margin-left: 0;
+    padding-left: 0;
   }
 
   .blog-section-title h1 {
